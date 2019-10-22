@@ -3,12 +3,13 @@ import styled from 'styled-components'
 import SplashPage from './SplashPage'
 
 const AppContainer = styled.body`
+  background-color: black;
   display: flex;
   flex-direction: column;
   font-family: 'Varela', sans-serif;
   height: calc(100vh - 10%);
-  margin: auto;
-  width: 100vw;
+  margin: 0 auto;
+  width: calc(100vw - 0%);
 `
 
 const StyledHeaderContainer = styled.div`
@@ -31,7 +32,11 @@ const StyledHeader = styled.h1`
   color: white;
   font-size: 40px;
   margin: 0px;
+  @media (max-width: 560px) {
+    font-size: 24px;
+  }
   @media (max-width: 375px) {
+    font-size: 16px;
     display: none;
   }
 `
@@ -108,7 +113,7 @@ function App() {
     <div>
       <AppContainer>
         <StyledHeaderContainer>
-          <StyledHeader>GC</StyledHeader>
+          <StyledHeader>George Caras</StyledHeader>
           <StyledNav>
             <a href="#"><StyledNavItem>Resume</StyledNavItem></a>
             <a href="#"><StyledNavItem>Projects</StyledNavItem></a>
