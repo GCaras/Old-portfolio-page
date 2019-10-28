@@ -23,18 +23,17 @@ const StyledProjectsContainer = styled.section`
 
 const StyledPageHeader = styled.h2`
     border-bottom: 2px solid #FEFFFF;
-    color: #FEFFFF;
+    color: #F1F1F1;
     font-size: 36px;
     margin: 15px;
-    text-shadow: 2px 2px #3AAFA9;
 `
 
 const StyledProjectArticle = styled.article`
     align-items: center;
-    background: #FEFFFF;
+    background: #F1F1F1;
     border: 5px solid #3AAFA9;
     border-radius: 5%;
-    color: #17252A;
+    color: #2B7A78;
     margin: 20px;
     padding: 0 20px;
     text-align: center;
@@ -42,13 +41,17 @@ const StyledProjectArticle = styled.article`
     &:hover{
     transform:scale(1.05);
     z-index:1;
-  }
+    }
+    @media (max-width: 440px) {
+        width: 300px;
+    }
 `
 
 const StyledProjectHeader = styled.h3`
     color: #17252A;
     font-size: 24px;
     margin: 15px;
+    text-shadow: 1px 1px 1px #3AAFA9;
 `
 
 
@@ -57,6 +60,9 @@ const StyledProjectThumbnail = styled.img`
     border-radius: 5%/10%;
     height: 180px;
     width: 310px;
+    @media (max-width: 440px) {
+        width: 280px;
+    }
 `
 
 function Projects() {

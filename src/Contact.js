@@ -1,9 +1,8 @@
 import React from 'react'
-import headshot from './img/headshot.png'
 import styled from 'styled-components'
 
 const HeadshotImage = styled.img`
-  border: 3px solid #17252A;
+  border: 2px solid black;
   border-radius: 10%;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
   height: 150px;
@@ -43,11 +42,11 @@ function SplashPage () {
         <div>
             <StyledMain>
                 <StyledSplashContainer>
-                    <h1>George Caras</h1>
-                    <HeadshotImage src={headshot} />
-                    <p>"I bring functional solutions featuring engaging interfaces to make everyone's job easier."</p>
-                    <h2>About Me</h2>
-                    <p>From Ashburn, Va born and raised. On the playgrounds is where I spent most of my days. </p>
+                    <h1>Contact George Caras</h1>
+                    <section>
+                        <div>Email: gcaras0@gmail.com</div>
+                        <div>Phone: (703) 975 2084</div>
+                    </section>
                 </StyledSplashContainer>
             </StyledMain>
         </div>

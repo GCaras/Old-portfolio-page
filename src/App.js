@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Route } from 'react-router-dom'
 import SplashPage from './SplashPage'
 import Projects from './Projects'
+import Contact from './Contact'
 import resume from './img/GeorgeCaras_Resume.pdf'
 
 const AppContainer = styled.body`
@@ -16,14 +17,14 @@ const AppContainer = styled.body`
 
 const StyledHeaderContainer = styled.div`
   align-items: center;
-  background-color: #3AAFA9;
-  border-bottom: 2px solid #FEFFFF;
-  color: #FEFFFF;
+  background-color: #2B7A78;
+  border-bottom: 2px solid #F1F1F1;
+  color: #F1F1F1;
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
   text-align: center;
-  @media (max-width: 560px) {
+  @media (max-width: 624px) {
     flex-direction: column
   }
   @media (max-width: 375px) {
@@ -33,11 +34,11 @@ const StyledHeaderContainer = styled.div`
 `
 
 const StyledHeader = styled.h1`
-  color: #FEFFFF;
+  color: #F1F1F1;
   font-size: 40px;
   margin: 0px;
   text-shadow: 2px 2px #17252A;
-  @media (max-width: 560px) {
+  @media (max-width: 719px) {
     font-size: 24px;
     padding: 10px;
   }
@@ -59,7 +60,7 @@ const StyledNav = styled.nav`
 
 const StyledNavItem = styled.div`
   background-color: #17252A;
-  border: 2px solid #FEFFFF;
+  border: 2px solid #F1F1F1;
   border-radius: 13%/30%;
   box-shadow: 2px 2px 10px gray;
   font-size: 25px;
@@ -99,8 +100,8 @@ const StyledSocialLinks = styled.img`
 
 const StyledFooterContainer = styled.div`
   align-items: center;
-  background-color: #3AAFA9;
-  border-top: 2px solid #FEFFFF;
+  background-color: #2B7A78;
+  border-top: 2px solid #F1F1F1;
   color: white;
   display: flex;
   height: 90px;
@@ -143,6 +144,11 @@ function App() {
           path='/projects'
           exact
           render={Projects}
+        />
+        <Route
+          path="/contact"
+          exact
+          render={Contact}
         />
       </AppContainer>
       <StyledFooterContainer>
