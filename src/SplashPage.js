@@ -27,7 +27,7 @@ const StyledSplashContainer = styled.article`
     align-items: center;
     background: #FEFFFF;
     border: 5px solid #3AAFA9;
-    border-radius: 5%;
+    border-radius: 5%/10%;
     color: #17252A;
     margin: 10px;
     padding: 20px;
