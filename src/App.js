@@ -1,27 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { Route } from 'react-router-dom'
 import SplashPage from './SplashPage'
+import Projects from './Projects'
+import resume from './img/GeorgeCaras_Resume.pdf'
 
 const AppContainer = styled.body`
-  background-color: black;
+  background-color: #3AAFA9;
   display: flex;
   flex-direction: column;
   font-family: 'Varela', sans-serif;
-  height: calc(100vh - 10%);
   margin: 0 auto;
-  width: calc(100vw - 0%);
 `
 
 const StyledHeaderContainer = styled.div`
   align-items: center;
-  background-color: darkcyan;
-  border-bottom: 2px solid black;
-  color: white;
+  background-color: #3AAFA9;
+  border-bottom: 2px solid #FEFFFF;
+  color: #FEFFFF;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
-  text-shadow: 2px 2px black;
+  padding: 10px 30px;
   text-align: center;
+  @media (max-width: 560px) {
+    flex-direction: column
+  }
   @media (max-width: 375px) {
     flex-direction: column;
     padding: 10px;
@@ -29,15 +33,17 @@ const StyledHeaderContainer = styled.div`
 `
 
 const StyledHeader = styled.h1`
-  color: white;
+  color: #FEFFFF;
   font-size: 40px;
   margin: 0px;
+  text-shadow: 2px 2px #17252A;
   @media (max-width: 560px) {
     font-size: 24px;
+    padding: 10px;
   }
   @media (max-width: 375px) {
     font-size: 16px;
-    display: none;
+    padding: 5px;
   }
 `
 
@@ -52,22 +58,22 @@ const StyledNav = styled.nav`
 `
 
 const StyledNavItem = styled.div`
-  /* background-color: black; */
-  background-image: linear-gradient(black, slategray, black);
-  border: 2px solid white;
+  background-color: #17252A;
+  border: 2px solid #FEFFFF;
   border-radius: 13%/30%;
-  box-shadow: 2px 2px darkslategray;
-  font-size: 30px;
+  box-shadow: 2px 2px 10px gray;
+  font-size: 25px;
   margin: 0 10px;
-  padding: 3px 5px;
+  padding: 8px 10px;
   &:hover{
-    box-shadow: 5px 5px darkslategray;
+    box-shadow: 5px 5px 7px gray;
     transform:scale(1.05);
     z-index:1;
   }
   @media (max-width: 768px) {
+    border-radius: 10%/25%;
     font-size: 20px;
-    padding: 0 10px;
+    padding: 5px 10px;
   }
 `
 
@@ -93,8 +99,8 @@ const StyledSocialLinks = styled.img`
 
 const StyledFooterContainer = styled.div`
   align-items: center;
-  background-color: darkcyan;
-  border-top: 2px solid black;
+  background-color: #3AAFA9;
+  border-top: 2px solid #FEFFFF;
   color: white;
   display: flex;
   height: 90px;
@@ -113,13 +119,31 @@ function App() {
     <div>
       <AppContainer>
         <StyledHeaderContainer>
+          <Link to="/">
           <StyledHeader>George Caras</StyledHeader>
+          </Link>
           <StyledNav>
-            <a href="#"><StyledNavItem>Resume</StyledNavItem></a>
-            <a href="#"><StyledNavItem>Projects</StyledNavItem></a>
+          <Link to="/projects">
+              <StyledNavItem>Projects</StyledNavItem>
+            </Link>
+            <a href={resume} download>
+              <StyledNavItem>Resum&eacute;</StyledNavItem>
+            </a>
+            <Link to="/contact">
+              <StyledNavItem>Contact</StyledNavItem>
+            </Link>
           </StyledNav>
         </StyledHeaderContainer>
-        <SplashPage />
+        <Route 
+          path="/"
+          exact
+          render={SplashPage}
+        />
+        <Route
+          path='/projects'
+          exact
+          render={Projects}
+        />
       </AppContainer>
       <StyledFooterContainer>
         <StyledSocialLinksContainer>
