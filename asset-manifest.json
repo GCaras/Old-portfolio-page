@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GCaras.github.io/static/css/main.843214bb.chunk.css",
+    "main.js": "/GCaras.github.io/static/js/main.48b302cf.chunk.js",
+    "main.js.map": "/GCaras.github.io/static/js/main.48b302cf.chunk.js.map",
+    "runtime-main.js": "/GCaras.github.io/static/js/runtime-main.a48a9022.js",
+    "runtime-main.js.map": "/GCaras.github.io/static/js/runtime-main.a48a9022.js.map",
+    "static/js/2.16fc81f4.chunk.js": "/GCaras.github.io/static/js/2.16fc81f4.chunk.js",
+    "static/js/2.16fc81f4.chunk.js.map": "/GCaras.github.io/static/js/2.16fc81f4.chunk.js.map",
+    "index.html": "/GCaras.github.io/index.html",
+    "precache-manifest.22111690a0a114c078d0dd03296086b0.js": "/GCaras.github.io/precache-manifest.22111690a0a114c078d0dd03296086b0.js",
+    "service-worker.js": "/GCaras.github.io/service-worker.js",
+    "static/css/main.843214bb.chunk.css.map": "/GCaras.github.io/static/css/main.843214bb.chunk.css.map",
+    "static/media/GeorgeCaras_Resume.pdf": "/GCaras.github.io/static/media/GeorgeCaras_Resume.2602e246.pdf",
+    "static/media/TCGthumb.jpg": "/GCaras.github.io/static/media/TCGthumb.f563f426.jpg",
+    "static/media/YouDueThumb.png": "/GCaras.github.io/static/media/YouDueThumb.8f9613cb.png",
+    "static/media/headshot.png": "/GCaras.github.io/static/media/headshot.aa54d353.png",
+    "static/media/videogame-trivia-thumbnail.png": "/GCaras.github.io/static/media/videogame-trivia-thumbnail.10901a6e.png"
+  }
+}
