@@ -89,10 +89,6 @@ function Projects() {
     return (
         <div>
             <StyledMain>
-                <StyledPageHeader>Skills</StyledPageHeader>
-                <StyledSkillsArticle>
-                    <div>JavaScript | React | Responsive Design | HTML | CSS | MongoDb | Express | Python | Django REST Framework</div>
-                </StyledSkillsArticle>
                 <StyledPageHeader>Projects</StyledPageHeader>
                 <StyledProjectsContainer>
                     <a target="_blank" href='https://gcaras.github.io/Project-1-Video-Game-Trivia/'>
@@ -127,6 +123,10 @@ function Projects() {
                         </StyledProjectArticle>
                     </a>
                 </StyledProjectsContainer>
+                <StyledPageHeader>Skills</StyledPageHeader>
+                <StyledSkillsArticle>
+                    <div>JavaScript | React | Responsive Design | HTML | CSS | MongoDb | Express | Python | Django REST Framework</div>
+                </StyledSkillsArticle>
             </StyledMain>
         </div>
     )
