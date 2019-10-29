@@ -53,7 +53,7 @@ const StyledProjectArticle = styled.article`
     border-radius: 5%;
     color: #2B7A78;
     margin: 20px;
-    min-height: 500px;
+    min-height: 520px;
     padding: 0 20px;
     text-align: center;
     width: 330px;
