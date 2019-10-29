@@ -1,14 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-const HeadshotImage = styled.img`
-  border: 2px solid black;
-  border-radius: 10%;
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
-  height: 150px;
-  margin: 5px;
-  width: 130px;
-`
+import { Link } from 'react-router-dom'
 
 const StyledMain = styled.section`
     align-items: center;
@@ -24,7 +16,7 @@ const StyledMain = styled.section`
 
 const StyledSplashContainer = styled.article`
     align-items: center;
-    background: #FEFFFF;
+    background: #DEF2F1;
     border: 5px solid #3AAFA9;
     border-radius: 5%;
     color: #17252A;
@@ -44,8 +36,11 @@ function SplashPage () {
                 <StyledSplashContainer>
                     <h1>Contact George Caras</h1>
                     <section>
+                        <Link to='mailto: gcaras0@gmail.com'>
                         <div>Email: gcaras0@gmail.com</div>
+                        </Link>
                         <div>Phone: (703) 975 2084</div>
+                        <div>LinkedIn</div>
                     </section>
                 </StyledSplashContainer>
             </StyledMain>

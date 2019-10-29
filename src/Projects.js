@@ -12,7 +12,7 @@ const StyledMain = styled.section`
     flex-direction: column;
     margin: 0;
     min-height: 78.5vh;
-    padding: 20px 50px 0 50px;
+    padding: 20px 20px 0 20px;
 `
 
 const StyledProjectsContainer = styled.section`
@@ -22,19 +22,20 @@ const StyledProjectsContainer = styled.section`
 `
 
 const StyledPageHeader = styled.h2`
-    border-bottom: 2px solid #FEFFFF;
+    border-bottom: 2px solid #DEF2F1;
     color: #F1F1F1;
     font-size: 36px;
-    margin: 15px;
+    margin: 10px;
 `
 
 const StyledProjectArticle = styled.article`
     align-items: center;
-    background: #F1F1F1;
+    background: #DEF2F1;
     border: 5px solid #3AAFA9;
     border-radius: 5%;
     color: #2B7A78;
     margin: 20px;
+    min-height: 500px;
     padding: 0 20px;
     text-align: center;
     width: 330px;
@@ -60,6 +61,7 @@ const StyledProjectThumbnail = styled.img`
     border-radius: 5%/10%;
     height: 180px;
     width: 310px;
+    margin-bottom: 20px;
     @media (max-width: 440px) {
         width: 280px;
     }
@@ -74,17 +76,27 @@ function Projects() {
                     <StyledProjectArticle>
                         <StyledProjectHeader>Videogame Trivia!</StyledProjectHeader>
                         <StyledProjectThumbnail src={videoGameThumb} alt="Videogame Trvia"/>
-                        <p>Responsively designed website trivia game that features Vanilla Javascript, HTML, and CSS. Utilizes Object Oriented Programming and DOM manipulation in JS to provide questions, validate answers, and provide information and feedback on selected answers.</p>
+                        <li>Responsively designed website trivia game that features Vanilla Javascript, HTML, and CSS</li>
+                        <br />
+                        <li>Utilizes Object Oriented Programming and DOM manipulation in JS to provide questions, validate answers, and provide information and feedback on selected answers</li>
                     </StyledProjectArticle>
                     <StyledProjectArticle>
                         <StyledProjectHeader>Trading Card Game Index</StyledProjectHeader>
                         <StyledProjectThumbnail src={tcgThumb} alt="TCG Index"/>
-                        <p>Trading Card Game Index: Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality based on the original Pokemon Trading Card Game Base Set. Users can view, edit, and delete cards as well as create their own custom card.</p>
+                        <li>Based on the original Pokemon Trading Card Game Base Set.</li>
+                        <br />
+                        <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
+                        <br />
+                        <li>Users can view, edit, and delete cards as well as create their own custom card.</li>
                     </StyledProjectArticle>
                     <StyledProjectArticle>
                         <StyledProjectHeader>YouDue</StyledProjectHeader>
                         <StyledProjectThumbnail src={youDueThumb} alt="YouDue"/>
-                        <p>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality that allows users to select Books, Movies, and other media of interest and set reminders for these items on specific dates.</p>
+                        <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
+                        <br />
+                        <li>Utilizes Google APIs to populate search queries for media</li>
+                        <br />
+                        <li>Allows users to select Books, Movies, and other media of interest and set reminders for these items on specific dates.</li>
                     </StyledProjectArticle>
                 </StyledProjectsContainer>
             </StyledMain>

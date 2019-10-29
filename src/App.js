@@ -8,7 +8,7 @@ import Contact from './Contact'
 import resume from './img/GeorgeCaras_Resume.pdf'
 
 const AppContainer = styled.body`
-  background-color: #3AAFA9;
+  background-color: #7A797D;
   display: flex;
   flex-direction: column;
   font-family: 'Varela', sans-serif;
