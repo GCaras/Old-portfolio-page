@@ -7,7 +7,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import resume from './img/GeorgeCaras_Resume.pdf'
 
-const AppContainer = styled.body`
+const AppContainer = styled.section`
   background-color: #7A797D;
   display: flex;
   flex-direction: column;

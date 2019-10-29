@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 const StyledMain = styled.section`
     align-items: center;
@@ -18,7 +17,7 @@ const StyledSplashContainer = styled.article`
     align-items: center;
     background: #DEF2F1;
     border: 5px solid #3AAFA9;
-    border-radius: 5%;
+    border-radius: 5%/20%;
     color: #17252A;
     margin: 10px;
     padding: 20px;
@@ -29,6 +28,8 @@ const StyledSplashContainer = styled.article`
     }
 `
 
+
+
 function SplashPage () {
     return(
         <div>
@@ -36,11 +37,8 @@ function SplashPage () {
                 <StyledSplashContainer>
                     <h1>Contact George Caras</h1>
                     <section>
-                        <Link to='mailto: gcaras0@gmail.com'>
                         <div>Email: gcaras0@gmail.com</div>
-                        </Link>
                         <div>Phone: (703) 975 2084</div>
-                        <div>LinkedIn</div>
                     </section>
                 </StyledSplashContainer>
             </StyledMain>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { a } from 'react-router-dom'
 import tcgThumb from './img/TCGthumb.jpg'
 import videoGameThumb from './img/videogame-trivia-thumbnail.png'
 import youDueThumb from './img/YouDueThumb.png'
@@ -73,31 +74,37 @@ function Projects() {
             <StyledMain>
                 <StyledPageHeader>Projects</StyledPageHeader>
                 <StyledProjectsContainer>
-                    <StyledProjectArticle>
-                        <StyledProjectHeader>Videogame Trivia!</StyledProjectHeader>
-                        <StyledProjectThumbnail src={videoGameThumb} alt="Videogame Trvia"/>
-                        <li>Responsively designed website trivia game that features Vanilla Javascript, HTML, and CSS</li>
-                        <br />
-                        <li>Utilizes Object Oriented Programming and DOM manipulation in JS to provide questions, validate answers, and provide information and feedback on selected answers</li>
-                    </StyledProjectArticle>
-                    <StyledProjectArticle>
-                        <StyledProjectHeader>Trading Card Game Index</StyledProjectHeader>
-                        <StyledProjectThumbnail src={tcgThumb} alt="TCG Index"/>
-                        <li>Based on the original Pokemon Trading Card Game Base Set.</li>
-                        <br />
-                        <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
-                        <br />
-                        <li>Users can view, edit, and delete cards as well as create their own custom card.</li>
-                    </StyledProjectArticle>
-                    <StyledProjectArticle>
-                        <StyledProjectHeader>YouDue</StyledProjectHeader>
-                        <StyledProjectThumbnail src={youDueThumb} alt="YouDue"/>
-                        <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
-                        <br />
-                        <li>Utilizes Google APIs to populate search queries for media</li>
-                        <br />
-                        <li>Allows users to select Books, Movies, and other media of interest and set reminders for these items on specific dates.</li>
-                    </StyledProjectArticle>
+                    <a target="_blank" href='https://gcaras.github.io/Project-1-Video-Game-Trivia/'>
+                        <StyledProjectArticle>
+                            <StyledProjectHeader>Videogame Trivia!</StyledProjectHeader>
+                            <StyledProjectThumbnail src={videoGameThumb} alt="Videogame Trvia"/>
+                            <li>Responsively designed website trivia game that features Vanilla Javascript, HTML, and CSS</li>
+                            <br />
+                            <li>Utilizes Object Oriented Programming and DOM manipulation in JS to provide questions, validate answers, and provide information and feedback on selected answers</li>
+                        </StyledProjectArticle>
+                    </a>
+                    <a target="_blank" href='http://kanto.surge.sh/'>
+                        <StyledProjectArticle>
+                            <StyledProjectHeader>Trading Card Game Index</StyledProjectHeader>
+                            <StyledProjectThumbnail src={tcgThumb} alt="TCG Index"/>
+                            <li>Based on the original Pokemon Trading Card Game Base Set.</li>
+                            <br />
+                            <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
+                            <br />
+                            <li>Users can view, edit, and delete cards as well as create their own custom card.</li>
+                        </StyledProjectArticle>
+                    </a>
+                    <a target="_blank" href='http://youdue.surge.sh/'>
+                        <StyledProjectArticle>
+                            <StyledProjectHeader>YouDue</StyledProjectHeader>
+                            <StyledProjectThumbnail src={youDueThumb} alt="YouDue"/>
+                            <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
+                            <br />
+                            <li>Utilizes Google APIs to populate search queries for media</li>
+                            <br />
+                            <li>Allows users to select Books, Movies, and other media of interest and set reminders for these items on specific dates.</li>
+                        </StyledProjectArticle>
+                    </a>
                 </StyledProjectsContainer>
             </StyledMain>
         </div>
