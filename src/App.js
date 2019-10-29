@@ -5,7 +5,6 @@ import { Route } from 'react-router-dom'
 import SplashPage from './SplashPage'
 import Projects from './Projects'
 import Contact from './Contact'
-import resume from './img/GeorgeCaras_Resume.pdf'
 
 const AppContainer = styled.section`
   background-color: #7A797D;
@@ -87,7 +86,7 @@ const StyledSocialLinksContainer = styled.div`
 
 const StyledSocialLinks = styled.img`
   height: 50px;
-  padding: 0 5px;
+  padding: 0 15px;
   &:hover{
     transform:scale(1.1);
     z-index:1;
@@ -102,11 +101,12 @@ const StyledFooterContainer = styled.div`
   align-items: center;
   background-color: #2B7A78;
   border-top: 2px solid #F1F1F1;
-  color: white;
+  color: #F1F1F1;
   display: flex;
   height: 90px;
-  justify-content: center;
-  text-shadow: 2px 2px black;
+  justify-content: space-between;
+  padding: 0 30px;
+  text-shadow: 1px 1px #17252A;
   text-align: center;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -114,6 +114,13 @@ const StyledFooterContainer = styled.div`
   }
 `
 
+const StyledContactPointHeader = styled.span`
+    color: #17252A;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 15px;
+    text-shadow: none;
+`
 
 function App() {
   return (
@@ -124,15 +131,15 @@ function App() {
           <StyledHeader>George Caras</StyledHeader>
           </Link>
           <StyledNav>
-          <Link to="/projects">
+            <Link to="/projects">
               <StyledNavItem>Projects</StyledNavItem>
             </Link>
-            <a href={resume} download>
-              <StyledNavItem>Resum&eacute;</StyledNavItem>
-            </a>
             <Link to="/contact">
               <StyledNavItem>Contact</StyledNavItem>
             </Link>
+            <a target="_blank" href="https://drive.google.com/file/d/15I8rDso6evaZ274yWDtWjiA7xkaAvNSj/view?usp=sharing">
+              <StyledNavItem>Resum&eacute;</StyledNavItem>
+            </a>
           </StyledNav>
         </StyledHeaderContainer>
         <Route 
@@ -152,9 +159,14 @@ function App() {
         />
       </AppContainer>
       <StyledFooterContainer>
+        <div>
+          <StyledContactPointHeader>Email:</StyledContactPointHeader> gcaras0@gmail.com
+          <StyledContactPointHeader>Phone:</StyledContactPointHeader>
+          (703) 975 2084
+        </div>
         <StyledSocialLinksContainer>
-          <a href=""><StyledSocialLinks src="https://image.flaticon.com/icons/svg/254/254394.svg" /></a>
-          <a href=""><StyledSocialLinks src="https://image.flaticon.com/icons/svg/25/25657.svg" /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/george-caras/"><StyledSocialLinks src="https://image.flaticon.com/icons/svg/254/254394.svg"/></a>
+          <a target="_blank" href="https://github.com/GCaras"><StyledSocialLinks src="https://image.flaticon.com/icons/svg/25/25657.svg"/></a>
         </StyledSocialLinksContainer>
       </StyledFooterContainer>
     </div>

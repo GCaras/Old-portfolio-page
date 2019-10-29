@@ -23,10 +23,27 @@ const StyledProjectsContainer = styled.section`
 `
 
 const StyledPageHeader = styled.h2`
-    border-bottom: 2px solid #DEF2F1;
     color: #F1F1F1;
     font-size: 36px;
     margin: 10px;
+`
+
+const StyledSkillsArticle = styled.article`
+    align-items: center;
+    background: #DEF2F1;
+    border: 5px solid #3AAFA9;
+    border-radius: 3%/50%;
+    color: #2B7A78;
+    display: flex;
+    font-size: 18px;
+    margin: 20px;
+    min-height: 50px;
+    padding: 0 30px;
+    text-align: center;
+    max-width: 1100px;
+    @media (max-width: 440px) {
+        width: 300px;
+    }
 `
 
 const StyledProjectArticle = styled.article`
@@ -72,13 +89,17 @@ function Projects() {
     return (
         <div>
             <StyledMain>
+                <StyledPageHeader>Skills</StyledPageHeader>
+                <StyledSkillsArticle>
+                    <div>JavaScript | React | Responsive Design | HTML | CSS | MongoDb | Express | Python | Django REST Framework</div>
+                </StyledSkillsArticle>
                 <StyledPageHeader>Projects</StyledPageHeader>
                 <StyledProjectsContainer>
                     <a target="_blank" href='https://gcaras.github.io/Project-1-Video-Game-Trivia/'>
                         <StyledProjectArticle>
                             <StyledProjectHeader>Videogame Trivia!</StyledProjectHeader>
                             <StyledProjectThumbnail src={videoGameThumb} alt="Videogame Trvia"/>
-                            <li>Responsively designed website trivia game that features Vanilla Javascript, HTML, and CSS</li>
+                            <li>Responsively designed website trivia game that features Javascript, HTML, and CSS</li>
                             <br />
                             <li>Utilizes Object Oriented Programming and DOM manipulation in JS to provide questions, validate answers, and provide information and feedback on selected answers</li>
                         </StyledProjectArticle>
