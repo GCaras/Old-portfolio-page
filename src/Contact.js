@@ -14,15 +14,6 @@ const StyledMain = styled.section`
     padding: 20px 20px;
 `
 
-const HeadshotImage = styled.img`
-  border: 3px solid #17252A;
-  border-radius: 10%;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-  height: 150px;
-  margin: 5px;
-  width: 130px;
-`
-
 const StyledPageHeader = styled.h2`
     color: #F1F1F1;
     font-size: 36px;
@@ -82,7 +73,6 @@ function SplashPage () {
             <StyledMain>
                 <StyledPageHeader>Contact</StyledPageHeader>
                 <StyledSplashContainer>
-                    <HeadshotImage src={headshot} />
                     <section>
                         <StyledContactPointHeader>George Caras</StyledContactPointHeader>
                         <br/>
