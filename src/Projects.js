@@ -148,15 +148,15 @@ function Projects() {
                                 <StyledTechIcon src="https://image.flaticon.com/icons/svg/919/919828.svg"/>
                             </div>
                             <div className="back">
-                                <StyledProjectHeader>Trading Card Game Index</StyledProjectHeader>
+                                <StyledProjectHeader>Videogame Trivia!</StyledProjectHeader>
                                 <StyledProjectDesc>
                                     <li>Responsively designed website trivia game that features Javascript, HTML, and CSS</li>
                                     <li>Utilizes Object Oriented Programming and DOM manipulation in JS to provide questions, validate answers, and provide information and feedback on selected answers</li>
                                     <StyledTechIconContainer>
-                                        <a target="_blank" href="http://kanto.surge.sh/">
+                                        <a target="_blank" href="https://gcaras.github.io/Project-1-Video-Game-Trivia/">
                                             <StyledTechIcon src="https://image.flaticon.com/icons/svg/152/152843.svg"/>
                                         </a>
-                                        <a href="https://github.com/GCaras/Project-1-Video-Game-Trivia">
+                                        <a target="_blank" href="https://github.com/GCaras/Project-1-Video-Game-Trivia">
                                         <StyledTechIcon src="https://image.flaticon.com/icons/svg/25/25657.svg" />
                                         </a>
                                     </StyledTechIconContainer>
@@ -182,7 +182,7 @@ function Projects() {
                                         <a target="_blank" href="http://kanto.surge.sh/">
                                             <StyledTechIcon src={reactIcon}/>
                                         </a>
-                                        <a href>
+                                        <a target="_blank" href="https://github.com/chriswehe/MernFrontEnd">
                                         <StyledTechIcon src="https://image.flaticon.com/icons/svg/25/25657.svg" />
                                         </a>
                                     </StyledTechIconContainer>

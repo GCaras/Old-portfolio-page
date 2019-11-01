@@ -24,7 +24,7 @@ const StyledHeaderContainer = styled.div`
   text-align: center;
   top: 0;
   width: 100vw;
-  z-index: 3;
+  z-index: 1010;
   @media (max-width: 624px) {
     flex-direction: column
   }

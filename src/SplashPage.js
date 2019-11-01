@@ -37,7 +37,7 @@ const StyledSplashContainer = styled.article`
     text-align: center;
     width: 40vw;
     @media (max-width: 1000px) {
-        width: 300px;
+        width: 280px;
         flex-direction: column;
     }
 `
