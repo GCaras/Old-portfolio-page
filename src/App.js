@@ -9,6 +9,7 @@ const AppContainer = styled.section`
   flex-direction: column;
   font-family: 'Varela', sans-serif;
   margin: 0 auto;
+  margin-top: 120px;
 `
 
 const StyledHeaderContainer = styled.div`
@@ -18,8 +19,12 @@ const StyledHeaderContainer = styled.div`
   color: #F1F1F1;
   display: flex;
   justify-content: center;
-  padding: 10px 30px;
+  padding: 10px 0px;
+  position: fixed;
   text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 3;
   @media (max-width: 624px) {
     flex-direction: column
   }
@@ -32,7 +37,8 @@ const StyledHeaderContainer = styled.div`
 const StyledNav = styled.nav`
   align-items: center;
   display: flex;
-  min-height: 30px;
+  flex-direction: column;
+  min-height: 20px;
   @media (max-width: 768px) {
     justify-content: space-around;
     margin: 5px;
@@ -42,6 +48,13 @@ const StyledPageHeader = styled.h2`
     color: #F1F1F1;
     font-size: 40px;
     margin: 10px;
+    text-shadow: 2px 2px 1px #17252A;
+`
+
+const StyledPageSubHeader = styled.h3`
+    color: #F1F1F1;
+    font-size: 20px;
+    margin: 0px;
     text-shadow: 2px 2px 1px #17252A;
 `
 
@@ -120,6 +133,9 @@ function App() {
             <StyledPageHeader>
               George Caras
             </StyledPageHeader>
+            <StyledPageSubHeader>
+              Software Engineer
+            </StyledPageSubHeader>
           </StyledNav>
         </StyledHeaderContainer>
         <SplashPage/>

@@ -33,7 +33,7 @@ const StyledSkillsArticle = styled.article`
     align-items: center;
     background: #DEF2F1;
     border: 5px solid #3AAFA9;
-    border-radius: 3%/50%;
+    border-radius: 10%/50%;
     color: #2B7A78;
     display: flex;
     font-size: 18px;
@@ -42,8 +42,8 @@ const StyledSkillsArticle = styled.article`
     padding: 0 30px;
     text-align: center;
     max-width: 1100px;
-    @media (max-width: 440px) {
-        width: 300px;
+    @media (max-width: 760px) {
+        border-radius: 50%/10%;
     }
 `
 
@@ -53,7 +53,6 @@ const StyledProjectHeader = styled.h3`
     margin: 15px;
     text-shadow: 1px 1px 1px #3AAFA9;
 `
-
 
 const StyledProjectThumbnail = styled.img`
     border: 5px solid #3AAFA9;
@@ -71,6 +70,16 @@ const StyledProjectDesc = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+`
+
+const StyledSkillsIconContainer = styled.div`
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
 `
 
 const StyledTechIconContainer = styled.div`
@@ -92,7 +101,40 @@ function Projects() {
             <StyledMain>
                 <StyledPageHeader>Skills</StyledPageHeader>
                 <StyledSkillsArticle>
-                    <div>JavaScript | React | Responsive Design | HTML | CSS | MongoDb | Express | Python | Django REST Framework</div>
+                    <StyledSkillsIconContainer>
+                        <div>
+                            <StyledTechIcon src="https://image.flaticon.com/icons/svg/919/919828.svg" />
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <StyledTechIcon src={reactIcon} />
+                            <h4>React</h4>
+                        </div>
+                        <div>
+                            <StyledTechIcon src={nodeJsIcon} />
+                            <h4>Node</h4>
+                        </div>
+                        <div>
+                            <StyledTechIcon src="https://user-images.githubusercontent.com/11978772/40430921-73d53922-5e63-11e8-8dcd-1662136c3212.png" />
+                            <h4>MongoDB</h4>
+                        </div>
+                        <div>
+                            <StyledTechIcon src="https://icon-library.net/images/python-icon/python-icon-18.jpg" />
+                            <h4>Python</h4>
+                        </div>
+                        <div>
+                            <StyledTechIcon src="https://icon-library.net/images/django-icon/django-icon-0.jpg" />
+                            <h4>Django</h4>
+                        </div>
+                        <div>
+                            <StyledTechIcon src="https://image.flaticon.com/icons/svg/152/152843.svg" />
+                            <h4>HTML</h4>
+                        </div>
+                        <div>
+                            <StyledTechIcon src="https://image.flaticon.com/icons/svg/732/732007.svg" />
+                            <h4>CSS</h4>
+                        </div>
+                    </StyledSkillsIconContainer>
                 </StyledSkillsArticle>
                 <StyledPageHeader>Projects</StyledPageHeader>
                 <StyledProjectsContainer>

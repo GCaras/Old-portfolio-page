@@ -1,5 +1,4 @@
 import React from 'react'
-import Contact from './Contact'
 import headshot from './img/headshot.png'
 import styled from 'styled-components'
 
@@ -36,8 +35,8 @@ const StyledSplashContainer = styled.article`
     margin: 10px;
     padding: 30px;
     text-align: center;
-    width: 50vw;
-    @media (max-width: 700px) {
+    width: 40vw;
+    @media (max-width: 1000px) {
         width: 300px;
         flex-direction: column;
     }
@@ -62,7 +61,7 @@ const StyledAboutContainer = styled.article`
     text-align: center;
     width: 50vw;
     @media (max-width: 700px) {
-        width: 300px;
+        width: 280px;
     }
 `
 
@@ -136,7 +135,7 @@ function SplashPage () {
                 <StyledPageHeader>About Me</StyledPageHeader>
                 <StyledAboutContainer>
                     <StyledSplashHeader>What I do...</StyledSplashHeader>
-                    <p>I'm a community-oriented full-stack developer driven to create and implement the most efficient solutions that achieve the company and team goals.  I've worked in the IT Consulting industry for over 5 years in back-office support and management. Using my past experiences to understand client pain points, I bring functional solutions featuring engaging interfaces to make everyone's job easier.</p>
+                    <p>I'm a community-oriented full-stack developer driven to create and implement the most efficient solutions that achieve the company and team goals.  I've worked in the IT Consulting industry for over 5 years in back-office support and management. Using my past experiences to understand client pain points, I bring functional solutions featuring responsive interfaces to make everyone's job easier.</p>
                     <StyledSplashHeader>Personally speaking...</StyledSplashHeader>
                     <p>I was born and raised in Northern Virginia. I enjoy spending time with my family and friends and exploring all that the area has to offer including dining, breweries, and sports! I'm a loyal DC sports fan (for better or worse) and religiously follow the Nationals, Capitals, and Redskins. I love binging Netflix series, watching movies, and playing videogames. Check out some of my projects below and you'll see what I mean! </p>
                 </StyledAboutContainer>
