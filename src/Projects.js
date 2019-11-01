@@ -179,7 +179,7 @@ function Projects() {
                                     <li>Full-Stack MERN(MongoDB, Express, Node, React) application with CRUD functionality</li>
                                     <li>Users can view, edit, and delete cards as well as create their own custom card.</li>
                                     <StyledTechIconContainer>
-                                        <a target="_blank" href="https://gcaras.github.io/Project-1-Video-Game-Trivia/">
+                                        <a target="_blank" href="http://kanto.surge.sh/">
                                             <StyledTechIcon src={reactIcon}/>
                                         </a>
                                         <a href>
@@ -208,7 +208,7 @@ function Projects() {
                                         <a target="_blank" href="http://youdue.surge.sh/">
                                             <StyledTechIcon src={reactIcon}/>
                                         </a>
-                                        <a href="https://github.com/GCaras/Project-3-Dashboard">
+                                        <a target="_blank" href="https://github.com/GCaras/Project-3-Dashboard">
                                         <StyledTechIcon src="https://image.flaticon.com/icons/svg/25/25657.svg" />
                                         </a>
                                     </StyledTechIconContainer>
