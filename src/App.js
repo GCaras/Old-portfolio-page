@@ -19,7 +19,7 @@ const StyledHeaderContainer = styled.div`
   color: #F1F1F1;
   display: flex;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 20px 0px;
   position: fixed;
   text-align: center;
   top: 0;
@@ -30,7 +30,7 @@ const StyledHeaderContainer = styled.div`
   }
   @media (max-width: 375px) {
     flex-direction: column;
-    padding: 10px;
+    padding: 20px 0px;
   }
 `
 
@@ -41,13 +41,13 @@ const StyledNav = styled.nav`
   min-height: 20px;
   @media (max-width: 768px) {
     justify-content: space-around;
-    margin: 5px;
+    margin: 0px;
   }
 `
 const StyledPageHeader = styled.h2`
     color: #F1F1F1;
     font-size: 40px;
-    margin: 10px;
+    margin: 0px;
     text-shadow: 2px 2px 1px #17252A;
 `
 

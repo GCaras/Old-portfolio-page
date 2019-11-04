@@ -37,7 +37,8 @@ const StyledSplashContainer = styled.article`
     text-align: center;
     width: 40vw;
     @media (max-width: 1000px) {
-        width: 280px;
+        border-radius: 25%/15%;
+        width: 220px;
         flex-direction: column;
     }
 `
@@ -61,7 +62,16 @@ const StyledAboutContainer = styled.article`
     text-align: center;
     width: 50vw;
     @media (max-width: 700px) {
+        border-radius: 10%;
         width: 280px;
+    }
+    @media (max-width: 375px) {
+        border-radius: 25%/10%;
+        width: 240px;
+    }
+    @media (max-width: 350px) {
+        border-radius: 25%/10%;
+        width: 220px;
     }
 `
 
