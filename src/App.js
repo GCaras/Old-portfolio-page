@@ -39,7 +39,6 @@ const StyledFooterContainer = styled.div`
   border-top: 2px solid #F1F1F1;
   padding: 20px 0px;
   text-align: center;
-  width: 100vw;
   z-index: 1000;
 `
 
