@@ -14,7 +14,7 @@ const StyledMain = styled.section`
     flex-direction: column;
     margin: 0;
     min-height: 78.5vh;
-    padding: 20px 20px 0 20px;
+    padding: 20px;
 `
 
 const StyledProjectsContainer = styled.section`

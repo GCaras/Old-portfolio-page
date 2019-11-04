@@ -34,6 +34,15 @@ const StyledHeaderContainer = styled.div`
   }
 `
 
+const StyledFooterContainer = styled.div`
+  background-color: #2B7A78;
+  border-top: 2px solid #F1F1F1;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100vw;
+  z-index: 1000;
+`
+
 const StyledNav = styled.nav`
   align-items: center;
   display: flex;
@@ -74,6 +83,7 @@ function App() {
         </StyledHeaderContainer>
         <SplashPage/>
         <Projects/>
+        <StyledFooterContainer />
       </AppContainer>
     </div>
   );
