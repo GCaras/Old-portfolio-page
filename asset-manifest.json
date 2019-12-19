@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b60d42b1.chunk.css",
+    "main.js": "/static/js/main.27013ad2.chunk.js",
+    "main.js.map": "/static/js/main.27013ad2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.13fb335e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.13fb335e.js.map",
+    "static/js/2.c356bf86.chunk.js": "/static/js/2.c356bf86.chunk.js",
+    "static/js/2.c356bf86.chunk.js.map": "/static/js/2.c356bf86.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.25970eee688062b92092d954ab3ff66c.js": "/precache-manifest.25970eee688062b92092d954ab3ff66c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b60d42b1.chunk.css.map": "/static/css/main.b60d42b1.chunk.css.map",
+    "static/media/TCGthumb.jpg": "/static/media/TCGthumb.f563f426.jpg",
+    "static/media/YouDueThumb.png": "/static/media/YouDueThumb.8f9613cb.png",
+    "static/media/headshot.png": "/static/media/headshot.aa54d353.png",
+    "static/media/nodejs.svg": "/static/media/nodejs.9eed6032.svg",
+    "static/media/react-brands.svg": "/static/media/react-brands.d8cf7740.svg",
+    "static/media/videogame-trivia-thumbnail.png": "/static/media/videogame-trivia-thumbnail.10901a6e.png"
+  }
+}
